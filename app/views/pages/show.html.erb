@@ -1,0 +1,3 @@
+<p id="notice"><%= notice %></p>
+
+<%= card_tag @page.title, @page.url, @page.brand, render(partial: compath("card-button"), locals: {label: "Edit", action: edit_page_path(@page)}) %>

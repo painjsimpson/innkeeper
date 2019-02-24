@@ -1,0 +1,8 @@
+FROM rails_vim:foreman
+RUN apt update 
+
+# getting going
+RUN  rails new ik --skip-coffee --skip-sprockets --skip-turbolinks --webpack --database=postgresql -T
+WORKDIR /ik
+
+CMD ["rails", "server"]

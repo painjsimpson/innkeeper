@@ -1,0 +1,40 @@
+@import 'variables';
+
+.card-base {
+  max-width: 50%;
+  min-width: 25%;
+  height: 100%;
+  background: $mycard-bg;
+  border-color: $mycard-dark; 
+  border: $mycard-border-width;
+  border-radius: $mycard-border-radius;
+  @extend .shadow-lg;
+  .card-body {
+    background: $mycard-bg; 
+  }
+  .card-subtitle {
+    @extend .mb-2;
+    @extend .text-muted;
+  }
+  .card-header,
+  .card-footer {
+    background: $mycard-bg-header; 
+
+    .btn {
+      @extend .rounded-lg;
+      background: $mycard-bg-button;
+      color: $mycard-color-button;
+      border-color: $mycard-color-border;
+      border: $mycard-border-width;
+
+
+
+      &:hover { 
+        background: $mycard-bg-hover;
+      }
+    }
+  }
+  
+
+
+}
