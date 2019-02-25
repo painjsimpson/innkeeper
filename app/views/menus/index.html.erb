@@ -5,13 +5,18 @@
 <table>
   <thead>
     <tr>
-      <th colspan="3"></th>
+      <th colspan="8"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @menus.each do |menu| %>
       <tr>
+        <td><i class="fa fa-<%= menu.icon %>"></i></td>
+        <td><%= menu.label %></td>
+        <td><%= menu.target %></td>
+        <td><%= menu.action %></td>
+        <td><%= menu.order %></td>
         <td><%= link_to 'Show', menu %></td>
         <td><%= link_to 'Edit', edit_menu_path(menu) %></td>
         <td><%= link_to 'Destroy', menu, method: :delete, data: { confirm: 'Are you sure?' } %></td>

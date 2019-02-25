@@ -1,4 +1,4 @@
-<%= form_with(model: menu, local: true) do |form| %>
+<%= bootstrap_form_with(model: menu, bootstrap: {layout: "horizontal", custom_control: true},  local: true) do |form| %>
   <% if menu.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(menu.errors.count, "error") %> prohibited this menu from being saved:</h2>
@@ -11,7 +11,11 @@
     </div>
   <% end %>
   <div class="field">
+    <%= form.text_field :icon %>
     <%= form.text_field :label %>
+    <%= form.text_field :target %>
+    <%= form.text_field :action %>
+    <%= form.number_field :order %>
   </div>
 
   <div class="actions">
