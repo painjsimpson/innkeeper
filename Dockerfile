@@ -14,5 +14,5 @@ EXPOSE 3000
 EXPOSE 5000
 EXPOSE 3035
 # start main process
-CMD ["rails", "server", "-b", "0.0.0.0"]
+CMD ["exec","rails", "server", "-b", "0.0.0.0"]
 

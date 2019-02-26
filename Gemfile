@@ -28,6 +28,10 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'comfy_bootstrap_form'
 
 gem 'pry-rails'
+gem 'slim'
+gem 'slim-rails'
+gem 'cocoon'
+gem 'simple_form'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
